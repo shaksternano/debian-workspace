@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt update
+sudo apt upgrade -y
 git clone https://github.com/shaksternano/debian-workspace ~/.workspace-setup
 sudo apt install -y git curl wget build-essential zip zsh zsh-autosuggestions zsh-syntax-highlighting
 sudo chsh -s $(which zsh) $USER
